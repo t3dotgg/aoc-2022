@@ -20,10 +20,7 @@ const clearEmptyStrings = () => {
     }
   });
 };
-
 clearEmptyStrings();
-
-console.log(stacks);
 
 const ins = rest.split("\n");
 
