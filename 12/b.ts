@@ -80,13 +80,9 @@ const allValidMoves = (point: Point) => {
   });
 };
 
-let allVisitedPoints: Set<string> = new Set([`${start.x},${start.y}`]);
+const allVisitedPoints: Set<string> = new Set([`${start.x},${start.y}`]);
 
 const pointToString = (point: Point) => `${point.x},${point.y}`;
-const stringToPoint = (str: string) => ({
-  x: parseInt(str.split(",")[0]),
-  y: parseInt(str.split(",")[1]),
-});
 
 let incompletePaths: Point[][] = [[end]];
 
